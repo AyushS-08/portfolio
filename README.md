@@ -1,5 +1,6 @@
-
-
+![Language](https://img.shields.io/badge/Language-HTML-red)
+![Language](https://img.shields.io/badge/Language-CSS-blue)
+![Language](https://img.shields.io/badge/Language-Javascript-yellow)
 
 
 Welcome to my portfolio website! This repository contains the source code for my personal portfolio website, where you can explore my projects, skills, and experiences.
@@ -15,3 +16,6 @@ Contact: Reach out to me easily via email or connect with me on LinkedIn and Git
 
 Technologies Used:
 Frontend: HTML5, CSS3, JavaScript (React.js)
+
+Feedback:
+Your feedback is highly appreciated! If you have any suggestions, feature requests, or bug reports, please feel free to open an issue.
