@@ -15,7 +15,7 @@ About Me: Learn more about me, my background, interests, and professional experi
 Contact: Reach out to me easily via email or connect with me on LinkedIn and GitHub.
 
 Technologies Used:
-Frontend: HTML5, CSS3, JavaScript (React.js)
+Frontend: HTML5, CSS3, JavaScript
 
 Feedback:
 Your feedback is highly appreciated! If you have any suggestions, feature requests, or bug reports, please feel free to open an issue.
