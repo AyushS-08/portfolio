@@ -24,39 +24,31 @@ body{
     margin: 0 auto;
     padding: 0 20px;
 }
-header{
-    padding: 40px 0 30px;
+.navb {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
-}
-.logo{
-    display: inline-flex;
-    justify-content: center;
-    align-items:center;
-}
-.logo .logo-text{
-    font-size: 34px;
-    font-weight: 500;
+    justify-content: space-between;
+    padding: 30px;
+    text-decoration: none;
     color: #0ef;
+    background-color: rgb(51, 54, 59);
+    position: fixed;  /* Make the navbar fixed */
+    top: 0; 
+    box-sizing: border-box;
+    left: 0;          /* Position it at the top */
+    width: 100vw;      /* Make it span the full width of the page */
+    z-index: 1000;    /* Ensure it overlaps other elements */
 }
 
-nav .nav{
-    list-style-type: none;
-    font-size: 26px;
+.navb h4 a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
 }
-nav .nav li{
-    display: inline-block;
-
-}
-nav .nav li a{
-    color: #e5e5e5;
-    margin-right: 2.5rem;
-}
-nav .nav li a:hover{
+.navb h4 a:hover {
     color:#0ef;
 }
+
 .container{
     display: flex;
     justify-content: space-around;
@@ -211,6 +203,7 @@ span {
     color: #0ef;
 }
 #about {
+    font-family: roboto;
     position: relative;
     z-index: 1;
     padding: 4%;
@@ -248,7 +241,7 @@ span {
     animation-delay: calc(.2s * var);
 }
 .skills{
-    height: 200vh;
+    height: 180vh;
 }
 #skills{
     text-align: center;
@@ -283,7 +276,7 @@ span {
     border-radius: 10px;
     width: 100%;
     height: 5px;
-    background-color: #000;
+    background-color: grey;
     animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
     transform: scaleX(0);
     transform-origin: left;
@@ -328,6 +321,7 @@ span {
 }
 #project{
     margin: 30px;
+    margin-bottom: 35px;
 }
 #project p h1{
     text-align: center;
@@ -341,9 +335,38 @@ span {
   .sub-title{
     text-align: center;
   }
+  .proj_img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.proj_img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.proj_img img {
+    width: calc(50% - 5px); /* 50% width with margin between images */
+    max-width: 100%; /* Ensure images don't exceed container width */
+    margin-bottom: 10px; /* Add margin between images */
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .proj_img img {
+        width: calc(50% - 5px); /* Adjust width for smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .proj_img img {
+        width: 100%; /* Full width for extra small screens */
+    }
+}
   .carousel-cell {
     width: 66%;
-    height: 200px;
+    height: 400px;
     margin-right: 10px;
     border-radius: 5px;
   }
@@ -352,7 +375,7 @@ span {
   .carousel-cell:before {
     display: block;
     text-align: center;
-    line-height: 200px;
+    line-height: 400px;
     font-size: 80px;
     color: white;
   }
