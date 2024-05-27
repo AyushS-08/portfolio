@@ -5,20 +5,10 @@ var typed = new Typed(".text", {
     backDelay: 1000,
     loop: true
   });
-  
-var New = document.querySelector('.New');
-var nav = document.querySelector('.nav');
-var links = document.querySelectorAll('.nav li');
-
-New.addEventListener("click", function() {
-    this.classList.add("click");
-    nav.classList.add("open");
-});
-
 function page1Animation(){
   var tl=gsap.timeline()
 
-tl.from(".nav li, nav, .logo",{
+tl.from(".navb",{
   y:-30,
   opacity:0,
   delay:0.4,
