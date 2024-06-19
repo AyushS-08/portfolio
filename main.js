@@ -5,52 +5,19 @@ var typed = new Typed(".text", {
     backDelay: 1000,
     loop: true
   });
-function page1Animation(){
-  var tl=gsap.timeline()
 
-tl.from(".navb",{
-  y:-30,
-  opacity:0,
-  delay:0.4,
-  duration:0.5,
-  stagger:0.14
-})}
-function page2Animation(){
-  var tl2 = gsap.timeline({
-      scrollTrigger:{
-          trigger:".about",
-          scroller:"body",
-          start:"top 50%",
-          end:"top -60%",
-          srcub:2,
-      }
-  })
+  const toggleMenuClicked = () => {
+    const body = document.body;
+    const openIcon = document.getElementById("open-icon");
+    const closeIcon = document.getElementById("close-icon");
   
-  tl2.from(".services",{
-      y:30,
-      opacity:0,
-      duration:0.5,
-  })
-  tl2.from(".elem.line1.left",{
-      x:-300,
-      opacity:0,
-      duration:0.5,
-  })
-  tl2.from(".elem.line1.right",{
-      x:300,
-      opacity:0,
-      duration:0.5,
-  })
-  tl2.from(".elem.line2.left",{
-      x:-300,
-      opacity:0,
-      duration:0.5,
-  })
-  tl2.from(".elem.line2.right",{
-      x:300,
-      opacity:0,
-      duration:0.5,
-  })
-}
-
-page1Animation();
+    body.classList.toggle("open");
+  
+    if (body.classList.contains("open")) {
+      openIcon.style.display = "none";
+      closeIcon.style.display = "flex";
+    } else {
+      openIcon.style.display = "flex";
+      closeIcon.style.display = "none";
+    }
+  };  
