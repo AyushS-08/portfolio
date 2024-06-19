@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ayush Singh | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cambria:wght@300;400;500&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="icon" href="path/to/your/favicon.ico" type="image/x-icon">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
@@ -15,14 +20,21 @@
     <div class="header-1">
         <div class="head">
             <header>
-                <div class="navb">
-                    <h2><i><b>Ayush</b></i></h2>
-                    <h4><a href="#home">Home</a></h4>
-                    <h4><a href="#about">About</a></h4>
-                    <h4><a href="#skills">Skills</a></h4>
-                    <h4><a href="#Projects">Projects</a></h4>
-                    <h4><a href="#connect">Connect</a></h4>
-                </div>
+                  <nav class="navigation-menu">
+                    <div class="navigation-menu__overlay" onclick="toggleMenuClicked()"></div>
+                    <button type="button" class="hamburger-menu" onclick="toggleMenuClicked()">
+                      <span class="material-icons" id="open-icon">menu</span>
+                      <span class="material-icons" id="close-icon">close</span>
+                    </button>
+                    <h1 class="site-identity-logo"><i><span>Ayush</span></i></h1>
+                    <section class="navigation-menu__labels">
+                      <button type="button">Home</button>
+                      <button type="button">About</button>
+                      <button type="button">Products</button>
+                      <button type="button">Services</button>
+                      <button type="button">Contact Us</button>
+                    </section>
+                  </nav>
             </header>
             <div class="container" id="home">
             <div class="hero-pic">
@@ -130,6 +142,8 @@ In addition to my technical expertise, I'm a collaborative team player who enjoy
     <div class="proj_img">
     <img src="project1.png" alt="project1"/>
     <img src="project2.PNG" alt="project2"/>
+    <img src="https://sinay.ai/wp-content/uploads/2022/09/api-e1649279794668-scaled.webp" alt="project4"/>
+    <img src="project5.PNG" alt="project5"/>
     <img src="project3.png" alt="project3"/></div>
 <!-- Flickity HTML init 
 <div class="carousel" data-flickity='{ "autoPlay": 1500, "pauseAutoPlayOnHover": false }'>
